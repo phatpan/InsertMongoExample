@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
@@ -17,4 +18,6 @@ func main(){
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Println("Insert data success.")
 }
